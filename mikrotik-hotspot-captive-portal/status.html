@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Harmony Bangkok - Status</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="expires" content="-1" />
+	<style type="text/css">
+		* { box-sizing: border-box; margin: 0; padding: 0; }
+
+		html, body {
+			height: 100%;
+			width: 100%;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+			color: #333;
+		}
+
+		body {
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
+			background: linear-gradient(135deg, #fff5ef 0%, #fdece0 50%, #eaf7ec 100%);
+		}
+
+		.card {
+			width: 100%;
+			max-width: 380px;
+			background: #ffffff;
+			border: 1px solid rgba(217, 70, 42, 0.12);
+			border-radius: 16px;
+			box-shadow: 0 18px 48px rgba(217, 70, 42, 0.18), 0 4px 14px rgba(45, 171, 79, 0.10);
+			padding: 24px 28px 24px;
+			text-align: center;
+		}
+
+		.logo {
+			width: 100%;
+			max-width: 200px;
+			height: auto;
+			margin: 0 auto 18px;
+			display: block;
+		}
+
+		.check {
+			width: 88px;
+			height: 88px;
+			margin: 0 auto 16px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			animation: pop 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+		}
+
+		.check svg {
+			width: 100%;
+			height: 100%;
+			fill: none;
+			stroke: #14a83a;
+			stroke-width: 9;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+		}
+
+		@keyframes pop {
+			0%   { transform: scale(0.4); opacity: 0; }
+			60%  { transform: scale(1.08); opacity: 1; }
+			100% { transform: scale(1); opacity: 1; }
+		}
+
+		.title {
+			font-size: 19px;
+			font-weight: 700;
+			color: #d9462a;
+			margin-bottom: 6px;
+			line-height: 1.25;
+		}
+
+		.subtitle {
+			font-size: 13px;
+			color: #777;
+			margin-bottom: 18px;
+		}
+
+		.css_button {
+			width: 100%;
+			padding: 11px;
+			font-size: 15px;
+			font-weight: 600;
+			color: #ffffff;
+			border: none;
+			border-radius: 9px;
+			cursor: pointer;
+			background: linear-gradient(135deg, #e85a37 0%, #d9462a 100%);
+			box-shadow: 0 4px 12px rgba(217, 70, 42, 0.30);
+			transition: transform 0.1s, box-shadow 0.2s, background 0.2s;
+			-webkit-appearance: none;
+			appearance: none;
+		}
+
+		.css_button:hover {
+			background: linear-gradient(135deg, #d9462a 0%, #b93a22 100%);
+			box-shadow: 0 6px 16px rgba(217, 70, 42, 0.40);
+		}
+
+		.css_button:active { transform: translateY(1px); }
+
+		.footer {
+			margin-top: 16px;
+			font-size: 11px;
+			color: #999;
+		}
+
+		.footer .accent { color: #2dab4f; font-weight: 600; }
+
+		@media (max-width: 380px) {
+			.card { padding: 20px 22px 22px; border-radius: 14px; }
+			.logo { max-width: 180px; margin-bottom: 14px; }
+			.check { width: 76px; height: 76px; margin-bottom: 14px; }
+			.title { font-size: 18px; }
+		}
+
+		@media (min-height: 700px) and (min-width: 768px) {
+			.card { max-width: 400px; padding: 28px 32px 28px; }
+			.logo { max-width: 220px; margin-bottom: 22px; }
+			.check { width: 96px; height: 96px; margin-bottom: 18px; }
+			.title { font-size: 21px; }
+		}
+	</style>
+</head>
+<body>
+	<div class="card">
+		<img class="logo" src="img/logo.jpg" alt="Harmony Bangkok" />
+
+		<div class="check">
+			<svg viewBox="0 0 100 100">
+				<circle cx="50" cy="50" r="42" />
+				<polyline points="30,52 44,67 72,37" />
+			</svg>
+		</div>
+
+		<div class="title">You are connected</div>
+		<div class="subtitle">Enjoy a smooth and secure connection during your stay.</div>
+
+		<form action="$(link-logout)" name="logout" method="post">
+			<input type="submit" class="css_button" value="Log out" />
+		</form>
+
+		<div class="footer">Powered by <span class="accent">Harmony Bangkok</span></div>
+	</div>
+</body>
+</html>
