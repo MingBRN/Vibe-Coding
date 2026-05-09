@@ -14,7 +14,7 @@ Branded captive portal for **MikroTik RouterOS Hotspot** — Harmony Bangkok WiF
 | `error.html` | Branded error page |
 | `rlogin.html` | 302 redirect to login (captive portal trigger) |
 | `redirect.html` | MikroTik internal redirect handler |
-| `errors.txt` | Localized error messages (Thai) |
+| `errors.txt` | Localized error messages |
 | `radvert.html` | RADIUS advertisement page (optional) |
 | `md5.js` | CHAP password hashing |
 | `img/logo.jpg` | Brand logo |
