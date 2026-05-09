@@ -1,4 +1,4 @@
-# hotspot-harmony-final
+# Mikrotik hotspot captive portal
 
 Branded captive portal for **MikroTik RouterOS Hotspot** — Harmony Bangkok WiFi.
 
